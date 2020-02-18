@@ -23,7 +23,14 @@ public class FunWithStack
                 System.out.print(decimalNumber + " in binary is --> ");
 
                 // YOUR CODE GOES HERE
-
+                while (decimalNumber != 0){
+                    int mod = decimalNumber % 2;
+                    stack.push(mod);
+                    decimalNumber /= 2;
+                }
+                while (!stack.isEmpty()){
+                    System.out.print(stack.pop());
+                }
 
 
                 System.out.println();
