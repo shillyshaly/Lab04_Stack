@@ -10,7 +10,7 @@ public class FunWithStack
 {
     public void decimalToBinary()
     {
-        // TODO PROJECT #1
+        // TODO PROJECT #1 - DONE
         Scanner keyboard = new Scanner(System.in);
         Stack<Integer> stack = new Stack<>();
         try
@@ -44,7 +44,7 @@ public class FunWithStack
 
     public void ancientMultiplier()
     {
-        // TODO PROJECT #1
+        // TODO PROJECT #1 - DONE
         // http://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication
         Stack<Integer> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
@@ -87,6 +87,7 @@ public class FunWithStack
                 System.out.println("---> Calculating the result");
                 System.out.print(operand1 + " * " + operand2 + " is: ");
 
+                operand2 = 0;
                 while (!stack1.isEmpty()){
                     it1 = stack1.pop();
 
