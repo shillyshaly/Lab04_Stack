@@ -113,8 +113,8 @@ public class FunWithStack
     public static void main(String[] args)
     {
         FunWithStack funWithStack = new FunWithStack();
-//        System.out.println("\u001B[35m\u001B[1m*** DECIMAL TO BINARY CONVERTER ***\u001B[0m");
-//        funWithStack.decimalToBinary();
+        System.out.println("\u001B[35m\u001B[1m*** DECIMAL TO BINARY CONVERTER ***\u001B[0m");
+        funWithStack.decimalToBinary();
         System.out.println("\u001B[35m\u001B[1m*** ANCIENT MULTIPLIER ***\u001B[0m");
         funWithStack.ancientMultiplier();
 
