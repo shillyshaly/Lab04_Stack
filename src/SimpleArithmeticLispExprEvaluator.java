@@ -17,7 +17,7 @@ public class SimpleArithmeticLispExprEvaluator
      */
     public double evaluate(String lispExpr)
     {
-        // TODO PROJECT #5
+        // TODO PROJECT #5 - in progress
         boolean nextShouldBeOperator = false;
         // Create two stacks: an expression stack and the helper stack:
         Stack<LispToken> expressionStack = new Stack<>();
