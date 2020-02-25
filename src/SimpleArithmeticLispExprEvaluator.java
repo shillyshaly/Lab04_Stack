@@ -1,10 +1,11 @@
+import java.util.EmptyStackException;
 import java.util.Scanner;
 import java.util.Stack;
 
 /**
  * This class evaluates a simple arithmetic Lisp expression.
  *
- * @author YOUR NAME
+ * @author Jamie Hernandez
  * @version 2/18/2020
  */
 public class SimpleArithmeticLispExprEvaluator
@@ -39,17 +40,36 @@ public class SimpleArithmeticLispExprEvaluator
             {
                 // expressionStack must not be empty since the operator should have been encountered
                 //   if it is empty throw an exception
-
+                if (expressionStack.isEmpty()){
+                    throw new EmptyStackException();
+                }else {
                 // grab the integer,
                 // create LispToken object with it and push the object on expression stack
-
+                    int data = lispExprScanner.nextInt();
+                    LispToken intToken = new LispToken(data);
+                    expressionStack.push(intToken);
+                }
             }
             else
             {
                 // grab the character
+                int i = 0;
+                String data = lispExprScanner.next();
+                char ch = ' ';
+                while (i < data.length()){
+                    ch = data.charAt(i);
 
-                //	If you see "(":
-                //   	- expect the next character to be an operator
+                    //	If you see "(":
+                    //   	- expect the next character to be an operator
+                    if (ch == '('){
+                        
+                    }
+
+                    i++;
+                }
+
+
+
 
                 //	If you see ")":
                 //      - if an operator was expected throw an exception
